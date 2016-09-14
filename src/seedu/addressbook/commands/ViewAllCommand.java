@@ -36,5 +36,11 @@ public class ViewAllCommand extends Command {
         } catch (IndexOutOfBoundsException ie) {
             return new CommandResult(Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX);
         }
+       
+    }
+    
+    @Override
+    public boolean isMutating(){
+        return false;
     }
 }
